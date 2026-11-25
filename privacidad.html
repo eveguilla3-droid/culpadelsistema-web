@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Culpa del Sistema</title>
+<link rel="icon" href="icono.png">
+<meta name="description" content="Qué datos y permisos usa el Publicador de Culpa del Sistema, dónde se guardan y cómo desconectarlo y borrar sus datos.">
+<style>
+  :root { --fondo:#141414; --texto:#f2f2f2; --suave:#b9b9b9; --acento:#ff8a3d; --borde:#2a2a2a; --tarjeta:#1c1c1c; }
+  @media (prefers-color-scheme: light) { :root { --fondo:#faf8f5; --texto:#1b1b1b; --suave:#555; --acento:#c4541a; --borde:#e2ddd6; --tarjeta:#fff; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--fondo); color:var(--texto); font:16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:780px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  .fecha { color:var(--suave); margin:0 0 28px; }
+  h2 { font-size:1.2rem; margin:36px 0 8px; }
+  h3 { font-size:1.02rem; margin:20px 0 6px; }
+  .tarjeta { background:var(--tarjeta); border:1px solid var(--borde); border-radius:12px; padding:16px 20px; margin:12px 0; }
+  ul { padding-left:20px; }
+  li { margin:4px 0; }
+  code { font-size:.92em; background:var(--tarjeta); border:1px solid var(--borde); border-radius:4px; padding:0 4px; }
+  .tabla { width:100%; overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; min-width:520px; font-size:.95rem; }
+  th, td { border:1px solid var(--borde); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--tarjeta); }
+  a { color:var(--acento); }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--borde); font-size:.9rem; color:var(--suave); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Publicador de Culpa del Sistema · Última actualización: 25 de noviembre de 2026</p>
+
+  <h2>1. Qué es y quién lo usa</h2>
+  <p>El <strong>Publicador de Culpa del Sistema</strong> (también «CDS Publicador») es una herramienta privada con la que
+  Culpa del Sistema publica <strong>sus propios videos en sus propias cuentas</strong> de Facebook, Instagram, YouTube y TikTok.
+  La usa únicamente el responsable de Culpa del Sistema. No es un servicio abierto al público: ninguna otra persona inicia sesión
+  en ella ni conecta sus cuentas.</p>
+  <p>Ningún video se publica sin una aprobación manual del responsable, ligada al archivo exacto, al texto y a la cuenta de destino.</p>
+
+  <h2>2. Qué permisos usa en cada plataforma</h2>
+  <p>Solo los necesarios para publicar y para comprobar que una publicación no se repita.</p>
+  <div class="tabla">
+  <table>
+    <tr><th>Plataforma</th><th>Permisos</th><th>Para qué se usan</th></tr>
+    <tr><td>Facebook (página Culpa del Sistema)</td>
+        <td><code>pages_manage_posts</code>, <code>pages_read_engagement</code>, <code>pages_show_list</code>, <code>business_management</code></td>
+        <td>Publicar videos en la página; leer la lista de videos recientes de la página (identificador, texto y fecha) para no duplicar;
+            obtener el acceso de la página. <code>business_management</code> solo se pide porque la página pertenece a un portafolio
+            empresarial de Meta; no se usa para administrar el portafolio.</td></tr>
+    <tr><td>Instagram (@culpadelsistemapr)</td>
+        <td><code>instagram_basic</code>, <code>instagram_content_publish</code></td>
+        <td>Publicar reels; leer el identificador de la cuenta, el estado de procesamiento de cada envío y las publicaciones recientes
+            (identificador, texto, fecha y enlace) para no duplicar.</td></tr>
+    <tr><td>YouTube (canal Culpa sistema, @culpasistema)</td>
+        <td><code>youtube.upload</code>, <code>youtube.readonly</code></td>
+        <td>Subir videos; leer el identificador del canal y la lista de subidas recientes (título, descripción, fecha e identificador)
+            para comprobar la cuenta y no duplicar.</td></tr>
+    <tr><td>TikTok (@culpadelsistemapr)</td>
+        <td><code>user.info.basic</code>, <code>video.publish</code></td>
+        <td>Identificar la cuenta conectada, consultar sus opciones de privacidad, publicar videos y consultar el estado de cada publicación.</td></tr>
+  </table>
+  </div>
+
+  <h2>3. Qué datos trata y qué no</h2>
+  <h3>Sí trata</h3>
+  <ul>
+    <li><strong>Los videos y textos de Culpa del Sistema</strong> que el responsable aprueba, que se envían a la plataforma de destino.</li>
+    <li><strong>Las credenciales de conexión</strong> que entrega cada plataforma (tokens de acceso o de renovación, y las claves de cliente de la propia app).</li>
+    <li><strong>Datos públicos de nuestras propias publicaciones</strong>: identificadores, textos, fechas, enlaces y estado de procesamiento.</li>
+    <li><strong>Un registro local de publicaciones</strong>: qué paquete se aprobó, a qué cuenta, cuándo, con qué resultado y el enlace publicado.</li>
+  </ul>
+  <h3>No trata</h3>
+  <ul>
+    <li>Datos de seguidores, comentarios, mensajes privados ni estadísticas de audiencia.</li>
+    <li>Datos de otras personas ni de otras cuentas.</li>
+    <li>No vende ni comparte datos con terceros, no muestra publicidad y no usa los datos para entrenar modelos.
+        Los únicos destinatarios son las propias plataformas en las que publicamos.</li>
+  </ul>
+
+  <h2>4. Dónde se guardan</h2>
+  <ul>
+    <li>Las credenciales se guardan <strong>solo en el equipo del responsable</strong>, en un archivo de configuración local que no se comparte,
+        no se sube a repositorios de código y no aparece en los registros. Los asistentes automáticos del sistema no las reciben.</li>
+    <li>El registro de publicaciones se guarda en el mismo equipo y no contiene credenciales.</li>
+    <li>Las conexiones con las plataformas usan sus conexiones oficiales (HTTPS) y no siguen redirecciones a otras direcciones.</li>
+  </ul>
+
+  <h2>5. Cuánto tiempo se conservan</h2>
+  <ul>
+    <li>Las credenciales se conservan mientras la cuenta esté conectada y se borran al desconectarla.</li>
+    <li>Las conexiones pueden <strong>dejar de funcionar</strong> en cualquier momento: si el acceso se revoca, si caduca según las reglas
+        de la plataforma (por ejemplo, por falta de uso o por un cambio de contraseña), o si la plataforma cambia sus condiciones.
+        En ese caso el Publicador no publica nada y hay que volver a conectar la cuenta.</li>
+    <li>El registro de publicaciones se conserva mientras exista el proyecto, o hasta que se pida su borrado.</li>
+  </ul>
+
+  <h2>6. Cómo desconectarlo</h2>
+  <p>Cualquiera de estos pasos corta el acceso del Publicador:</p>
+  <ul>
+    <li><strong>En el equipo del responsable:</strong> Nucletrix → System Core → AI &amp; subscriptions → botón <em>Quitar</em> junto a cada conexión.</li>
+    <li><strong>Facebook e Instagram:</strong> Facebook → Configuración y privacidad → Configuración → <em>Integraciones comerciales</em>
+        → eliminar <strong>CDS Publicador</strong>.</li>
+    <li><strong>YouTube (Google):</strong> <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+        → eliminar el acceso de la app <strong>CDS Publicador</strong>.</li>
+    <li><strong>TikTok:</strong> Perfil → Menú → Configuración y privacidad → Seguridad → <em>Permisos de apps</em>
+        → eliminar el acceso de la app del Publicador.</li>
+  </ul>
+
+  <h2>7. Cómo eliminar sus datos</h2>
+  <ul>
+    <li><strong>Credenciales:</strong> se eliminan con el botón <em>Quitar</em> (sección 6) y dejan de servir al revocar el acceso en cada plataforma.</li>
+    <li><strong>Registro de publicaciones:</strong> se borra del equipo del responsable a petición.</li>
+    <li><strong>Videos ya publicados:</strong> se borran desde cada plataforma (Facebook, Instagram, YouTube o TikTok). Borrarlos allí no depende del Publicador.</li>
+    <li>Para cualquier solicitud de eliminación o pregunta, escribe a
+        <a href="mailto:culpadelsistemapr@gmail.com">culpadelsistemapr@gmail.com</a>. Responderemos lo antes posible.</li>
+  </ul>
+
+  <h2>8. Cambios en esta política</h2>
+  <p>Si el Publicador empieza a usar otros permisos o datos, actualizaremos esta página y su fecha antes de usarlos.</p>
+
+  <footer>
+    <p><a href="index.html">Culpa del Sistema</a> · <a href="terminos.html">Términos del servicio</a> · Contacto: <a href="mailto:culpadelsistemapr@gmail.com">culpadelsistemapr@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
